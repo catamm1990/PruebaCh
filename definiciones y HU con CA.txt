@@ -1,0 +1,129 @@
+Mejoras propuestas 
+
+1. Implementar la app en Idioma Español
+2. Las notificaciones via e-mail deben ser en español
+3. Permitir al uusario personalizar la aplicación con sus colores corporativos 
+de la marca
+
+HU de las mejoras propuestas 
+
+HU1 Habilitar la aplicación para el idioma Español
+CA - Todo lo que se visualice en la aplicación debe estar en Idioma español con 
+ortografía y gramática correctos 
+
+HU2 Habilitar notificaciones enviadas al correo en Idioma español
+CA - Los emails deben redactarse en español y tener la estructura 
+definida como se muestra en la plantilla ubicada en la documentacion de la HU
+
+HU3 - PErmitir al usuario personalizar el diseño de la aplicacion
+CA- EL usuario podrá personalizar la aplicación con los colores de su marca
+
+
+Tareas de prueba y desarrollo
+
+1.	Principios SOLID: son necesarios para que se puedan crear desarrollos 
+de software de una manera mas facil de entender por otros de manera estructurada y clara y mas faciles de darles soporte o mantenimiento
+ante los cambios que pueda presentar asi como poder reusar el código y usar la encapsulacion
+Se usa en la orientacion a objetos cuando se agrupan funcionalidades segun sus caracteristicas
+Se deben aplicar estos principios que son 
+unas características que se deben cumplir, son 5: 
+responsabilidad unica, (cada clase se responsabiliza de una sola cosa)
+abierto o cerrado, (las entidades deben estar abiertas a extension y cerradas para
+modificacion, es decir, se puede heredar o extender de ellas pero no modificarlas en si 
+por que es posible que la usen otras mas)
+sustitucion de liskov, (es importante en la jerarquia de calses, ya que una 
+subclase se puede reemplzar por su superclase si no se cumple,no es
+de calidad el software)
+segregacion de la interfaz,(el usuario no debe depender de interfaces 
+que no usa) 
+inversion de depedencia (en las abstracciones deben estar ubicadas las dependencias
+Los módulos de alto nivel no deberían depender de módulos de bajo nivel. Ambos deberían depender de abstracciones.
+Las abstracciones no deben cambiar si cambian los detalles sino que los 
+detalles deberían depender de ellas por que en la abstraccion esta la logica
+
+
+ 
+2.	Patrón Singleton: es un patrón de diseño que indica que solo
+se puede tener una instancia de una clase que aplica a toda la aplicacion.
+se usa "new", ademas se impone un constructor privado y un metodo estático.
+se usa con el fin de que solo haya una única instancia de una clase con una 
+referencia unica que la distinga en toda la aplicacion y asi evita duplicidad
+
+
+
+
+3.	Patrón FIRST: un patron de diseño es una forma 
+estandarizada de resolver los problemas que mas se dan o se presentan
+cuando se desarrolla un software, se usa el patron first para usar
+5 caracteristicas que se deben cumplir cuando se hacen pruebas unitarias con calidad, 
+estas son (rapido,independiente, repetible, autoevaluable y oportuno)
+si se aplican de manera correcta evita errores en produccion 
+
+
+4.	Patrón AAA: es una buena práctica para 
+las pruebas unitarias que se consiste en repartir una prueba 
+unitaria en 3 partes, Arrange, Act, Assert. (AAA)
+
+Arrange organiza o inicializa los objetos
+y hace que se den valores a los datos. 
+
+Act, llama al metodo a probar teniendo ya listos los parametros 
+Assert, es la confirmacion, DE QUE LO QUE SE PROBO ESTA BIEN
+
+
+5.	Pull Request
+Es una accion que realiza un desarrollador de software
+en el momento que acaba de creary hacer pruebas 
+a una funcionalidad o cuando da solucion a un error
+entonces debe pedir que lo que hizo, se sume al repositorio principal que se tenga en el proyecto
+Entonces los demas desarrolladores pueden revisar el cambio en el software
+para decir como les parece  y si les parece bien para aceptarlo o 
+dar sus comentarios para rechazarlo porque el software se hace en equipo
+
+6.	Release Train
+es un equipo multifuncional con muchas capacidades para dar
+soluciones que trabaja en grupo apuntando a metas iguales, que sean 
+reales y que se basan en ciertos valores o características. tambien
+se conoce como art agile release train, que es efectivo al momento de
+entregar resultados y operar en equipo. se unenn bajo una misma mision 
+que se despliega en conjunto entregando beneficios a los usuarios 
+
+7.	Quality Gates
+es una app que le da a las empresas la opcion de controlar y revisar la 
+integridad de la calidad de datos para que de una forma continua y 
+eficaz efectue la la calidad de la información cuando por ejemplo trabaja
+con procesos ETL en conjunto con datos
+
+
+
+8.	Diferencias servicios SOAP / REST: 
+(Simple Object Access Protocol)
+(REpresentational State Transfer).
+
+ambos envian y reciben 
+datos o mensajes en linea con API pero la diferencia es que Soap 
+es un protocolo, rest no lo es, rest es para transferncia de 
+estado y expone las api publicas
+para mejorar el crud de los datos
+, accede a recursos con una interfaz y soap es solo de acceso. REst es mas flexible, no define 
+tantos estándares como  soap que es mas
+especifico 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
