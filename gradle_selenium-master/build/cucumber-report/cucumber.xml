@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="210.182">
+<testcase classname="Create account" name="Verificar que se permita el acceso a la página web your logo para crear una cuenta" time="77.032">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}&#10;  (Session info: headless chrome=88.0.4324.150)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'QXCO511', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\JUAN~1.CEB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8a02d346c4dbc96be4874db85aeed77c&#10;*** Element info: {Using=id, value=customer_firstname}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigate index........................................................passed
+Given Click en el boton Sing in.............................................passed
+When A User enters a valid email............................................passed
+And A User clicks on Create Account button..................................passed
+When A User enters a customer first name....................................failed
+When A User enters a customer last name.....................................skipped
+When A User enters a password...............................................skipped
+When A User enters a first name.............................................skipped
+When A User enters a last name..............................................skipped
+When A User enters a address................................................skipped
+When A User enters a city...................................................skipped
+When A User select a state..................................................skipped
+When A User enters a zip postal code........................................skipped
+When A User select a country................................................skipped
+When A User enters a mobile phone...........................................skipped
+And A User clicks on Register button........................................skipped
+Then Application shows welcome message......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#customer_firstname"}
+  (Session info: headless chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QXCO511', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\JUAN~1.CEB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a02d346c4dbc96be4874db85aeed77c
+*** Element info: {Using=id, value=customer_firstname}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at automationpractice.TestStepsCp001.aUserEntersACustomerFirstName(TestStepsCp001.java:78)
+	at ✽.A User enters a customer first name(file:///D:/Users/juan.ceballos/Downloads/gradle_selenium-master/src/test/resources/features/createaccount.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="login" name="Verificar que luego de crear una cuenta, se permita el acceso a la misma desde la opción sign in/Already registered" time="57.05">
+<system-out><![CDATA[Given Navigate index by login...............................................passed
+Given Click en el boton Sing in by login....................................passed
+When A User enters a valid email login......................................passed
+When A User enters a valid password.........................................passed
+And A User clicks on Sign in button.........................................passed
+Then Application shows welcome message login................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search items" name="Verificar que si un usuario ingresa un artículo que no se tiene a la venta, se muestre un mensaje al usuario informándole esto" time="38.507">
+<system-out><![CDATA[Given Navigate index by search..............................................passed
+When A User enters a not exists item........................................passed
+And A User clicks on search button..........................................passed
+Then Application shows no result message....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search items" name="Verificar que si un usuario ingresa un artículo que  se tiene a la venta, se muestren los resultados de la búsqueda correctamente" time="35.979">
+<system-out><![CDATA[Given Navigate index by search..............................................passed
+When A User enters a exists item............................................passed
+And A User clicks on search button..........................................passed
+Then Application shows result message.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

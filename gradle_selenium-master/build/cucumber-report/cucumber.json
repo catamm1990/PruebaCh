@@ -1,0 +1,727 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T16:08:21.371Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3641000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp001.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1312000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp002.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1326000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp003.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verificar que se permita el acceso a la página web your logo para crear una cuenta",
+        "description": "",
+        "id": "create-account;verificar-que-se-permita-el-acceso-a-la-página-web-your-logo-para-crear-una-cuenta",
+        "after": [
+          {
+            "result": {
+              "duration": 612000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp003.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 615000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp002.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 654000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp001.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56302000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate index",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.navigateToPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2607000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click en el boton Sing in",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aClickHrefSigIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4639000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "A User enters a valid email",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersEmailCreateAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "A User clicks on Create Account button",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserClickOnCreateAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#customer_firstname\"}\n  (Session info: headless chrome\u003d88.0.4324.150)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027QXCO511\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\JUAN~1.CEB\\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8a02d346c4dbc96be4874db85aeed77c\n*** Element info: {Using\u003did, value\u003dcustomer_firstname}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat automationpractice.TestStepsCp001.aUserEntersACustomerFirstName(TestStepsCp001.java:78)\r\n\tat ✽.A User enters a customer first name(file:///D:/Users/juan.ceballos/Downloads/gradle_selenium-master/src/test/resources/features/createaccount.feature:9)\r\n",
+              "duration": 5033000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "A User enters a customer first name",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersACustomerFirstName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "A User enters a customer last name",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersACustomerLastName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "A User enters a password",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersAPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "A User enters a first name",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersAFirstName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "A User enters a last name",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersALastName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "A User enters a address",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersAAddress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "A User enters a city",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersACity()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "A User select a state",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserSelectAstate()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "A User enters a zip postal code",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersAZip()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "A User select a country",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserSelectACountry()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "A User enters a mobile phone",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserEntersAMobilePhone()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "A User clicks on Register button",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.aUserClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Application shows welcome message",
+            "match": {
+              "location": "automationpractice.TestStepsCp001.applicationShowsWelcomeMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@createaccount"
+          }
+        ]
+      }
+    ],
+    "name": "Create account",
+    "description": "",
+    "id": "create-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/createaccount.feature",
+    "tags": [
+      {
+        "name": "@createaccount",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T16:09:38.430Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1347000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp001.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1288000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp002.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1252000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp003.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verificar que luego de crear una cuenta, se permita el acceso a la misma desde la opción sign in/Already registered",
+        "description": "",
+        "id": "login;verificar-que-luego-de-crear-una-cuenta--se-permita-el-acceso-a-la-misma-desde-la-opción-sign-in/already-registered",
+        "after": [
+          {
+            "result": {
+              "duration": 613000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp003.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 666000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp002.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 608000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp001.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29983000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate index by login",
+            "match": {
+              "location": "automationpractice.TestStepsCp002.navigateToPageIndex()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6015000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click en el boton Sing in by login",
+            "match": {
+              "location": "automationpractice.TestStepsCp002.aClickHrefSigIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1054000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "A User enters a valid email login",
+            "match": {
+              "location": "automationpractice.TestStepsCp002.aUserEntersEmailLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "A User enters a valid password",
+            "match": {
+              "location": "automationpractice.TestStepsCp002.aUserEntersPasswordLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13981000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "A User clicks on Sign in button",
+            "match": {
+              "location": "automationpractice.TestStepsCp002.aUserClicksOnSingInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Application shows welcome message login",
+            "match": {
+              "location": "automationpractice.TestStepsCp002.applicationShowsWelcomeMessageLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T16:10:35.484Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1301000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp001.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1295000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp002.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1300000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp003.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verificar que si un usuario ingresa un artículo que no se tiene a la venta, se muestre un mensaje al usuario informándole esto",
+        "description": "",
+        "id": "search-items;verificar-que-si-un-usuario-ingresa-un-artículo-que-no-se-tiene-a-la-venta--se-muestre-un-mensaje-al-usuario-informándole-esto",
+        "after": [
+          {
+            "result": {
+              "duration": 651000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp003.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 599000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp002.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 608000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp001.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30142000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate index by search",
+            "match": {
+              "location": "automationpractice.TestStepsCp003.navigateToPageIndex()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 147000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "A User enters a not exists item",
+            "match": {
+              "location": "automationpractice.TestStepsCp003.aUserEntersANotExistsItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "A User clicks on search button",
+            "match": {
+              "location": "automationpractice.TestStepsCp003.aUserClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2322000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Application shows no result message",
+            "match": {
+              "location": "automationpractice.TestStepsCp003.applicationNoResultMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchitems"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-17T16:11:13.995Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1225000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp001.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1288000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp002.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1241000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp003.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Verificar que si un usuario ingresa un artículo que  se tiene a la venta, se muestren los resultados de la búsqueda correctamente",
+        "description": "",
+        "id": "search-items;verificar-que-si-un-usuario-ingresa-un-artículo-que--se-tiene-a-la-venta--se-muestren-los-resultados-de-la-búsqueda-correctamente",
+        "after": [
+          {
+            "result": {
+              "duration": 644000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp003.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 602000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp002.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 604000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "automationpractice.TestStepsCp001.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22989000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Navigate index by search",
+            "match": {
+              "location": "automationpractice.TestStepsCp003.navigateToPageIndex()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "A User enters a exists item",
+            "match": {
+              "location": "automationpractice.TestStepsCp003.aUserEntersAExistsItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7150000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "A User clicks on search button",
+            "match": {
+              "location": "automationpractice.TestStepsCp003.aUserClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Application shows result message",
+            "match": {
+              "location": "automationpractice.TestStepsCp003.applicationShowsResultMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchitems"
+          }
+        ]
+      }
+    ],
+    "name": "Search items",
+    "description": "",
+    "id": "search-items",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/searchitems.feature",
+    "tags": [
+      {
+        "name": "@searchitems",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

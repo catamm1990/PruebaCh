@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Create account" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-02-17T15:39:12" hostname="QXCO511" time="41.402">
+  <properties/>
+  <testcase name="Verificar que se permita el acceso a la página web your logo para crear una cuenta" classname="Create account" time="41.402">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}&#10;  (Session info: chrome=88.0.4324.150)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'QXCO511', ip: '10.242.4.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\JUAN~1.CEB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d469ebf0d9c81123f00560f701ed7a5d&#10;*** Element info: {Using=id, value=customer_firstname}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QXCO511', ip: '10.242.4.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\JUAN~1.CEB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d469ebf0d9c81123f00560f701ed7a5d
+*** Element info: {Using=id, value=customer_firstname}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at automationpractice.TestStepsCp001.aUserEntersACustomerFirstName(TestStepsCp001.java:78)
+	at ✽.A User enters a customer first name(file:///D:/Users/juan.ceballos/Downloads/gradle_selenium-master/src/test/resources/features/createaccount.feature:9)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@createaccount
+Scenario: Verificar que se permita el acceso a la página web your logo para crear una cuenta ?[90m# src/test/resources/features/createaccount.feature:4?[0m
+  ?[32mGiven ?[0m?[32mNavigate index?[0m                                                                       ?[90m# automationpractice.TestStepsCp001.navigateToPage()?[0m
+  ?[32mGiven ?[0m?[32mClick en el boton Sing in?[0m                                                            ?[90m# automationpractice.TestStepsCp001.aClickHrefSigIn()?[0m
+  ?[32mWhen ?[0m?[32mA User enters a valid email?[0m                                                           ?[90m# automationpractice.TestStepsCp001.aUserEntersEmailCreateAccount()?[0m
+  ?[32mAnd ?[0m?[32mA User clicks on Create Account button?[0m                                                 ?[90m# automationpractice.TestStepsCp001.aUserClickOnCreateAccountButton()?[0m
+  ?[31mWhen ?[0m?[31mA User enters a customer first name?[0m                                                   ?[90m# automationpractice.TestStepsCp001.aUserEntersACustomerFirstName()?[0m
+      ?[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#customer_firstname"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QXCO511', ip: '10.242.4.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\JUAN~1.CEB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d469ebf0d9c81123f00560f701ed7a5d
+*** Element info: {Using=id, value=customer_firstname}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at automationpractice.TestStepsCp001.aUserEntersACustomerFirstName(TestStepsCp001.java:78)
+	at ?.A User enters a customer first name(file:///D:/Users/juan.ceballos/Downloads/gradle_selenium-master/src/test/resources/features/createaccount.feature:9)
+?[0m
+  ?[36mWhen ?[0m?[36mA User enters a customer last name?[0m                                                    ?[90m# automationpractice.TestStepsCp001.aUserEntersACustomerLastName()?[0m
+  ?[36mWhen ?[0m?[36mA User enters a password?[0m                                                              ?[90m# automationpractice.TestStepsCp001.aUserEntersAPassword()?[0m
+  ?[36mWhen ?[0m?[36mA User enters a first name?[0m                                                            ?[90m# automationpractice.TestStepsCp001.aUserEntersAFirstName()?[0m
+  ?[36mWhen ?[0m?[36mA User enters a last name?[0m                                                             ?[90m# automationpractice.TestStepsCp001.aUserEntersALastName()?[0m
+  ?[36mWhen ?[0m?[36mA User enters a address?[0m                                                               ?[90m# automationpractice.TestStepsCp001.aUserEntersAAddress()?[0m
+  ?[36mWhen ?[0m?[36mA User enters a city?[0m                                                                  ?[90m# automationpractice.TestStepsCp001.aUserEntersACity()?[0m
+  ?[36mWhen ?[0m?[36mA User select a state?[0m                                                                 ?[90m# automationpractice.TestStepsCp001.aUserSelectAstate()?[0m
+  ?[36mWhen ?[0m?[36mA User enters a zip postal code?[0m                                                       ?[90m# automationpractice.TestStepsCp001.aUserEntersAZip()?[0m
+  ?[36mWhen ?[0m?[36mA User select a country?[0m                                                               ?[90m# automationpractice.TestStepsCp001.aUserSelectACountry()?[0m
+  ?[36mWhen ?[0m?[36mA User enters a mobile phone?[0m                                                          ?[90m# automationpractice.TestStepsCp001.aUserEntersAMobilePhone()?[0m
+  ?[36mAnd ?[0m?[36mA User clicks on Register button?[0m                                                       ?[90m# automationpractice.TestStepsCp001.aUserClickOnRegisterButton()?[0m
+  ?[36mThen ?[0m?[36mApplication shows welcome message?[0m                                                     ?[90m# automationpractice.TestStepsCp001.applicationShowsWelcomeMessage()?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 36821
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+feb 17, 2021 10:39:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 38022
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+feb 17, 2021 10:39:19 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 23983
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+feb 17, 2021 10:39:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>
